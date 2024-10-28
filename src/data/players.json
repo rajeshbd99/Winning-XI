@@ -106,6 +106,33 @@
       "battingStyle": "Right-hand Bat",
       "biddingPrice": 55000,
       "imageURL": "https://i.ibb.co/cQ0b4xG/Untitled-design.jpg"
+    },
+    {
+      "playerId": 18,
+      "name": "Mitchell Starc",
+      "country": "Australia",
+      "role": "Bowler",
+      "battingStyle": "Left-hand Bat",
+      "biddingPrice": 80000,
+      "imageURL": "https://i.ibb.co/fqYwKCB/CRICKET-AUS-ZIM-16-1662185254028-1662185254028-1662185398002-1662185398002.webp"
+    },
+    {
+      "playerId": 16,
+      "name": "Andre Russell",
+      "country": "West Indies",
+      "role": "All-rounder",
+      "battingStyle": "Right-hand Bat",
+      "biddingPrice": 75000,
+      "imageURL": "https://i.ibb.co/gSbfqTX/A-RUSSEL-COVER.webp"
+    },
+    {
+      "playerId": 17,
+      "name": "Jos Buttler",
+      "country": "England",
+      "role": "Wicketkeeper",
+      "battingStyle": "Right-hand Bat",
+      "biddingPrice": 85000,
+      "imageURL": "https://i.ibb.co/xsLwn86/jos-butlr.jpg"
     }
   ]
   

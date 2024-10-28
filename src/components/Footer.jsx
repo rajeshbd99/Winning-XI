@@ -3,6 +3,8 @@ import footerLogo from '../assets/logo-footer.png';
 import Newsletter from './Newsletter';
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+    const ownerName = "Rajesh Chowdhury";
     return (
         <footer className="bg-gray-900 text-white py-10 mt-40 px-4 relative">
             <div className='absolute top-[-20%] left-1/2 transform -translate-x-1/2 w-full max-w-5xl px-5'>
@@ -36,7 +38,9 @@ const Footer = () => {
             </div>
             <hr className="border-gray-700 my-6" />
             <div className="text-center mt-4 ">
-                <p className='text-sm font-thin'>&copy; 2024 Your Company All Rights Reserved</p>
+            <p className="text-sm font-thin">
+                &copy; {currentYear} {ownerName}. All Rights Reserved
+            </p>
             </div>
         </footer>
     );

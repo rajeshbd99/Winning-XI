@@ -1,15 +1,18 @@
-import React from 'react';
 import PlayerCard from './PlayerCard';
 
-const AvailablePlayers = ({ players, selectPlayer }) => {
+const AvailablePlayers = ({ players, selectPlayer, searchTerm, filterOption }) => {
+  // Filter players based on search term and filter option
+  const filteredPlayers = players.filter((player) => {
+    const searchValue = player[filterOption].toString().toLowerCase();
+    return searchValue.includes(searchTerm.toLowerCase());
+  });
+
   return (
-    <div className="py-8 mt-16 mb-16">
-      <h2 className="text-center text-2xl font-bold mb-6">Available Players</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
-        {players.map((player) => (
-          <PlayerCard key={player.playerId} player={player} selectPlayer={selectPlayer} />
-        ))}
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {filteredPlayers.map((player) => (
+        <PlayerCard key={player.playerId} player={player} selectPlayer={selectPlayer} />
+      ))}
+      {filteredPlayers.length === 0 && <p className='mt-10 text-2xl font-bold text-red-500'>No players match the search criteria.</p>}
     </div>
   );
 };
